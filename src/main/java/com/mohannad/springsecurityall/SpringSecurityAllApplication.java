@@ -14,14 +14,14 @@ public class SpringSecurityAllApplication {
         SpringApplication.run(SpringSecurityAllApplication.class, args);
     }
 
-    @Bean
-    CommandLineRunner runner(TodoService todoService){
-        return args -> {
-            todoService.addTodo(new Todo(1l ,"stydu udacity course"));
-            todoService.addTodo(new Todo(2l ,"solve codeforces problems"));
-            todoService.addTodo(new Todo(3l ,"play hard"));
-            todoService.addTodo(new Todo(4l ,"sleep well"));
-        };
-    }
+//    @Bean
+//    CommandLineRunner runner(TodoService todoService){
+//        return args -> {
+//            todoService.addTodo(new Todo(1l ,"stydu udacity course"));
+//            todoService.addTodo(new Todo(2l ,"solve codeforces problems"));
+//            todoService.addTodo(new Todo(3l ,"play hard"));
+//            todoService.addTodo(new Todo(4l ,"sleep well"));
+//        };
+//    }
 
 }
